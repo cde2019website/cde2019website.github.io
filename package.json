@@ -1,8 +1,8 @@
 {
-  "name": "cde2019website",
+  "name": "conferenceondiversityinengineering2019.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jlumbard.github.io/CDE2019Website/",
+  "homepage": "https://conferenceondiversityinengineering2019.github.io/",
   "dependencies": {
     "@devexpress/dx-react-core": "^2.0.1",
     "@devexpress/dx-react-scheduler": "^2.0.1",
@@ -21,8 +21,8 @@
     "yarn": "^1.17.3"
   },
   "scripts": {
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
