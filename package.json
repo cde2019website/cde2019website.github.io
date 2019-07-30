@@ -2,7 +2,7 @@
   "name": "cde2019website.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cde2019website.github.io/src",
+  "homepage": "https://cde2019website.github.io",
   "dependencies": {
     "@devexpress/dx-react-core": "^2.0.1",
     "@devexpress/dx-react-scheduler": "^2.0.1",
