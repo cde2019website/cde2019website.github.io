@@ -9,12 +9,17 @@ class Schedule extends React.Component{
             <div>
                 <PageHeader
                 header="Schedule"
-                detail="Weekend events are listed below, and downloadable following this <a>link</a>"
+                detail="Weekend events are listed below, and downloadable below."
                 >
                 </PageHeader>
                 <Sched>
 
                 </Sched>
+                <div className="downloadScheduleFooter">
+                    <div className="downloadScheduleText">
+                        Click <a href ="/">here</a> to download the event schedule.
+                    </div>
+                </div>
             </div>
         );
     }
