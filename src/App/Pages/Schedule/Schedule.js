@@ -17,7 +17,7 @@ class Schedule extends React.Component{
                 </Sched>
                 <div className="downloadScheduleFooter">
                     <div className="downloadScheduleText">
-                        Click <a href ="/">here</a> to download the event schedule.
+                        Click <a href ="https://calendar.google.com/calendar/b/1?cid=Y2Zlcy5jYV90NmFlYTNxNWNnNjQ2aTRoZjFuaDI4bGU4b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">here</a> to download the event schedule.
                     </div>
                 </div>
             </div>

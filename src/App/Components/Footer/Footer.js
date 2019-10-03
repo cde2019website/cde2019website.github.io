@@ -18,8 +18,6 @@ class Footer extends React.Component{
                 <h6>Conference on Diveristy in Engineering, 2019.</h6>
                 <h6><a href="mailto:cde2019chairs@gmail.com">cde2019chairs@gmail.com</a></h6>
                 </Col>
-                <Col className="FooterColumns">
-                </Col>
             </Row>
         );
     }

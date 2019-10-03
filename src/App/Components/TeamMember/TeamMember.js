@@ -21,9 +21,8 @@ class TeamMember extends React.Component{
             <Col>
                 <div style={divStyle} className="memberPhoto">
                 </div>
-                <h1>{this.props.name}</h1>
+                <a href={"mailto:"+this.props.email}>{this.props.name}</a>
                 <h2>{this.props.position}</h2>
-                <a href={"mailto:"+this.props.email}>{this.props.email}</a>
             </Col>
         );
     }

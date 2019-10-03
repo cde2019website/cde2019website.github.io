@@ -1,15 +1,21 @@
-img{
+.SponsorContainer img{
     height:auto;
     max-width:5em;
+    max-height: 3em;
+    display: block;
+    margin:auto;
 }
 
 .SponsorContainer{
     display: inline-block;
+    text-align: center;
 }
 .SponsorCover{
     text-align: center;
 }
-h1{
-    display: inline-block;
+.SponsorContainer h1{
+    display: block;
+    font-size:0.2em;
+    margin-top: 0.5em !important;
 
 }

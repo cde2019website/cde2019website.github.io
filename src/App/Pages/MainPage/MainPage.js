@@ -53,7 +53,7 @@ class MainPage extends React.Component{
           </h1>
           <hr/>
           <h2>
-          {this.props.language === "English" ? "Real-time Live Schedule" : "Calendrier des Événements en Direct"}
+          {this.props.language === "English" ? "Event Schedule" : "Calendrier des Événements en Direct"}
           </h2>
           </HomeCell>
           <HomeCell number="3">

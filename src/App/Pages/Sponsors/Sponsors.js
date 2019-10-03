@@ -6,7 +6,19 @@ import SponsorLevel from '../../Components/SponsorLevel/SponsorLevel.js';
 import PageHeader from '../../Components/PageHeader/PageHeader';
 
 
-import Nutrien from '../../img/nutrien.png';
+import Nutrien from '../../img/Nutrien.png';
+import Carleton from '../../img/Carleton.png';
+import EngineersCanada from '../../img/EngineersCanada.png';
+import hydroOne from '../../img/hydroOne.png';
+import Linamar from '../../img/Linamar.png';
+import Makerbars from '../../img/Makerbars.png';
+import McGill from '../../img/McGill.png';
+import RBC from '../../img/RBC.PNG';
+import Manitoba from '../../img/manitoba.png';
+import Waterloo from '../../img/Waterloo.png';
+import Chorley from  '../../img/chorley.png';
+
+
 
 class Sponsors extends React.Component{
 
@@ -19,28 +31,40 @@ class Sponsors extends React.Component{
                 >
                 </PageHeader>
 
-                <SponsorLevel level="Platinum"/>
+                <SponsorLevel level="Gold"/>
                 <Row>
                     <SponsorCell number="1" company="Nutrien" img={Nutrien}>
                     </SponsorCell>
                 </Row>
-                <SponsorLevel level="Gold"/>
-                <Row>
-                    <SponsorCell number="2">
-                    </SponsorCell>
-                </Row>
-                <Row>
-                    <SponsorCell number="3">
-                    </SponsorCell>
-                </Row>
                 <SponsorLevel level="Silver"/>
                 <Row>
-                    <SponsorCell number="4">
+                    <SponsorCell number="4" company = "Hydro One" img={hydroOne}>
                     </SponsorCell>
+                    <SponsorCell number="1" company = "Linamar" img ={Linamar}>
+                    </SponsorCell>
+                    <SponsorCell number="3" company = "Engineers Canada" img={EngineersCanada}>
+                    </SponsorCell>
+                </Row>
+                <Row>
                 </Row>
                 <SponsorLevel level="Bronze"/>
                 <Row>
-                    <SponsorCell number="5">
+                    <SponsorCell number="5" company = "Chorley and Bissett" img ={Chorley}>
+                    </SponsorCell>
+                </Row>
+                <SponsorLevel level="Donor"/>
+                <Row>
+                    <SponsorCell number="5" company = "MakerBars" img ={Makerbars}>
+                    </SponsorCell>
+                    <SponsorCell number="5" company = "University of Manitoba" img ={Manitoba}>
+                    </SponsorCell>
+                    <SponsorCell number="2" company="Carleton" img={Carleton}>
+                    </SponsorCell>
+                    <SponsorCell number="4" company="Waterloo" img={Waterloo}>
+                    </SponsorCell>
+                    <SponsorCell number="5" company = "RBC" img ={RBC}>
+                    </SponsorCell>
+                    <SponsorCell number="5" company = "McGill" img ={McGill}>
                     </SponsorCell>
                 </Row>
                 </div>

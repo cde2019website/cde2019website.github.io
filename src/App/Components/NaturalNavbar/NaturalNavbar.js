@@ -24,14 +24,14 @@ class NaturalNavbar extends React.Component{
         </Navbar.Brand>
         <Nav className="mr-auto">
        <NavDropdown title={"CDE 2019"} id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Spencer Engineering Building</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Amit Chakma Engineering Building</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Ivey Business School</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.4">Doubletree by Hilton</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item ><Link to="/History/">{this.props.language === "English" ? "History" : "Histoire"}</Link></NavDropdown.Item>
-            <NavDropdown.Item ><Link to="/Contact/">{this.props.language === "English" ? "Our Team" : "L'Equipe"}</Link></NavDropdown.Item>
-            <NavDropdown.Divider />
+            <NavDropdown.Item href="http://welcome.uwo.ca/360/seb.html">Spencer Engineering Building</NavDropdown.Item>
+            <NavDropdown.Item href="https://www.eng.uwo.ca/departments-units/amit-chakma-engineering-building/">Amit Chakma Engineering Building</NavDropdown.Item>
+            <NavDropdown.Item href="https://www.the-wave.ca/">The Wave</NavDropdown.Item>
+            <NavDropdown.Item href="https://doubletree3.hilton.com/en/hotels/ontario/doubletree-by-hilton-hotel-london-ontario-YXUKSDT/index.html">Doubletree by Hilton</NavDropdown.Item>
+            <NavDropdown.Divider/>
+            <NavDropdown.Item><Link to="/History/">{this.props.language === "English" ? "History" : "Histoire"}</Link></NavDropdown.Item>
+            <NavDropdown.Item><Link to="/Contact/">{this.props.language === "English" ? "Our Team" : "L'Equipe"}</Link></NavDropdown.Item>
+            <NavDropdown.Divider/>
             {this.props.children}
         </NavDropdown>
         </Nav>

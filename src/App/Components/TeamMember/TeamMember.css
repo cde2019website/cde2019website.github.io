@@ -1,9 +1,9 @@
 .memberPhoto{
-    height:70%;
-    width: 70%;
+    height:65%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
-    margin-top:15%;
+    margin-top:5%;
     margin-bottom: 5%;
     transition: all 1s linear;
 
@@ -12,7 +12,24 @@
     transform: scale(1.1);
 }
 
-.contactRow .col{
+ .contactRow .col{
     height: 50vh;
     text-align: center;
+    display: block !important;
+}
+
+ .contactRow .col a{
+    display: block !important;
+    max-width: 100%;
+    margin-bottom: 0px !important;
+}
+
+.contactRow .col h2{
+    display: block !important;
+    max-width: 100%;
+    margin-bottom: 0px !important;
+}
+
+ .contactRow .col a{
+    text-decoration: underline;
 }

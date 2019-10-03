@@ -4,14 +4,31 @@ import { ViewState } from '@devexpress/dx-react-scheduler';
 import {
   Scheduler,
   WeekView,
+  DayView,
+  Toolbar,
+  DateNavigator,
+  TodayButton,
   Appointments,
 } from '@devexpress/dx-react-scheduler-material-ui';
 import { withStyles } from '@material-ui/core/styles';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 
 const appointments = [
-  { startDate: '2018-11-01T09:45', endDate: '2018-11-01T11:00', title: 'Meeting' },
-  { startDate: '2018-11-01T12:00', endDate: '2018-11-01T13:30', title: 'Go to a gym' },
+  { startDate: '2019-11-01T08:00', endDate: '2019-11-01T15:30', title: 'Conference Registration & Hotel Check-In' },
+  { startDate: '2019-11-01T16:00', endDate: '2019-11-01T19:00', title: 'Opening Ceremonies & Sessions' },
+  { startDate: '2019-11-01T19:00', endDate: '2019-11-01T23:00', title: 'Delegate Social & Dinner' },
+  { startDate: '2019-11-02T08:30', endDate: '2019-11-02T09:30', title: 'Keynote' },
+  { startDate: '2019-11-02T09:30', endDate: '2019-11-02T12:00', title: 'Sessions' },
+  { startDate: '2019-11-02T12:00', endDate: '2019-11-02T13:30', title: 'Lunch & Career Fair' },
+  { startDate: '2019-11-02T13:30', endDate: '2019-11-02T15:30', title: 'Sessions Continued' },
+  { startDate: '2019-11-02T15:30', endDate: '2019-11-02T17:00', title: 'Breakout (Discussion) Groups' },
+  { startDate: '2019-11-02T19:00', endDate: '2019-11-02T22:00', title: 'Banquet' },
+  { startDate: '2019-11-03T09:00', endDate: '2019-11-03T12:00', title: 'Sessions Continued' },
+  { startDate: '2019-11-03T12:00', endDate: '2019-11-03T13:00', title: 'Lunch' },
+  { startDate: '2019-11-03T13:00', endDate: '2019-11-03T14:30', title: 'Sessions Continued' },
+  { startDate: '2019-11-03T14:30', endDate: '2019-11-03T15:30', title: 'Breakout (Discussion) Groups' },
+  { startDate: '2019-11-03T15:30', endDate: '2019-11-03T17:00', title: 'Closing Remarks & Keynote' },
+  { startDate: '2019-11-03T17:00', endDate: '2019-11-03T18:00', title: 'Dinner' },
 ];
 
 const style = theme => ({
@@ -70,11 +87,13 @@ export default class Sched extends React.PureComponent {
 
     this.state = {
       data: appointments,
+      currentDate: "2019-11-01",
     };
+    this.currentDateChange = (currentDate) => { this.setState({ currentDate }); };
   }
 
   render() {
-    const { data } = this.state;
+    const { data, currentDate } = this.state;
 
     return (
       <Paper>
@@ -82,13 +101,19 @@ export default class Sched extends React.PureComponent {
           data={data}
           height={500}
         >
-          <ViewState />
+          <ViewState
+        currentDate={currentDate}
+        onCurrentDateChange={this.currentDateChange}
+        />
           <WeekView
             startDayHour={9}
             endDayHour={19}
             timeTableCellComponent={TimeTableCell}
             dayScaleCellComponent={DayScaleCell}
           />
+          <Toolbar />
+          <DateNavigator />
+          <TodayButton />
           <Appointments />
         </Scheduler>
       </Paper>

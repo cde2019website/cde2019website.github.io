@@ -7,6 +7,7 @@ import MainPage from  './Pages/MainPage/MainPage.js';
 import Footer from './Components/Footer/Footer.js';
 import Contact from './Pages/Contact/Contact.js';
 import Schedule from './Pages/Schedule/Schedule.js';
+import History from './Pages/History/History.js';
 
 class App extends React.Component {
   constructor(props){
@@ -55,6 +56,11 @@ class App extends React.Component {
           <Route
           path="/Schedule/"
           render={props => <Schedule language = {this.state.language}/>}
+          />
+
+          <Route
+          path="/History/"
+          render={props => <History language = {this.state.language}/>}
           />
 
         </Switch>
