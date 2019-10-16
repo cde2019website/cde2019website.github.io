@@ -19,3 +19,6 @@
     margin-top: 0.5em !important;
 
 }
+.SponsorCover:Hover{
+    background-color: inherit;
+}

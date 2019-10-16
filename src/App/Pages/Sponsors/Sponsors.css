@@ -10,19 +10,19 @@ a:hover{
     background-image: url(../../img/UC.jpg);
   }
   .Sponsor2{
-    background-image: url(../../img/CDE1.jpg);
+    background-image: url(../../img/CDE.jpg);
   }
   .Sponsor3{
     background-image: url(../../img/CDE1.jpg);
   }
   .Sponsor4{
-    background-image: url(../../img/UC.jpg);
+    background-image: url(../../img/CDE2.jpg);
   }
   .Sponsor5{
-    background-image: url(../../img/CDE1.jpg);
+    background-image: url(../../img/CDE3.jpg);
   }
   .Sponsor6{
-    background-image: url(../../img/CDE1.jpg);
+    background-image: url(../../img/CDE4.jpg);
   }
   
   .SponsorContainer{
@@ -54,12 +54,12 @@ a:hover{
   /**rgba(0,83,119,0.9)**/
   
   .SponsorCover:Hover{
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(153,93,129,0.9);
     /**font-size: 2.7em !important; **/
     /**I really like the style of the above but It is obviously a choppy anmation  as I think any font-size change would be**/ 
   }
   h1{
-    font-size: inherit !important;
+    font-size: 0.7em !important;
     margin-bottom: 0px !important;
   }
   h2{
