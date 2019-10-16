@@ -3,11 +3,9 @@ import './MainPage.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import HomeCell from '../../Components/HomeCell/HomeCell';
-import VideoCell from '../../Components/VideoCell/VideoCell';
 import Countdown from 'react-countdown-now';
 import SocialMedia from '../../Components/SocialMedia/SocialMedia.js';
 import {Link} from "react-router-dom";
-import FAQ from '../../Components/FAQ/FAQ.js'
 
 
 const Completionist = () => <span> Begins Now</span>
