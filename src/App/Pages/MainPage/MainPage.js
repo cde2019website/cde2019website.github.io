@@ -3,6 +3,7 @@ import './MainPage.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import HomeCell from '../../Components/HomeCell/HomeCell';
+import VideoCell from '../../Components/VideoCell/VideoCell';
 import Countdown from 'react-countdown-now';
 import SocialMedia from '../../Components/SocialMedia/SocialMedia.js';
 import {Link} from "react-router-dom";
@@ -28,13 +29,13 @@ class MainPage extends React.Component{
     render(){
         return(
         <Container className="RowContainer">
-        <Row>
+        <Row className="titleRow">
           <HomeCell number="1">
           <h1 className="CountdownBanner">
           {this.props.language === "English" ? "2019 Conference on Diversity in Engineering" : "Conférence Sur La Diversité En Ingénierie"}
           <br/></h1>
           <hr/>
-          <h2><Countdown date={Date.UTC(2019,10,10)} renderer = {renderer} daysInHours={false}>
+          <h2><Countdown date={Date.UTC(2019,10,1)} renderer = {renderer} daysInHours={false}>
           <Completionist/>
           </Countdown>
           </h2>
@@ -78,44 +79,23 @@ class MainPage extends React.Component{
           </h1>
           <hr/>
           <h2>
-          {this.props.language === "English" ? "Who Makes This Possible?" : "Who Makes This Possible?"}
-          </h2>
-          </HomeCell>
-          <HomeCell number="5">
-          <h1>
-            <Link to="/Venues/">
-              {this.props.language === "English" ? "Venues" : "Lieux"}
-            </Link>
-          </h1>
-          <hr/>
-          <h2>
-          {this.props.language === "English" ? "Where Will It Be?" : "Where Will It Be?"}
+          {this.props.language === "English" ? "Who Makes This Possible?" : "Qui rend cela possible?"}
           </h2>
           </HomeCell>
           <HomeCell number="6">
           <h1>
             <Link to="/Contact/">
-              {this.props.language === "English" ? "Contact Us" : "Contactez-nous"}
+              {this.props.language === "English" ? "Our Team " : "Notre équipe"}
             </Link>
           </h1>
           <hr/>
           <h2>
-          {this.props.language === "English" ? "Get In-Touch With Our Team" : "Get In-Touch With Our Team"}
+          {this.props.language === "English" ? "Meet the Team" : "Rencontrer l'équipe"}
           </h2>
           </HomeCell>
         </Row>
         <div className="FAQs">
         <div className="FAQCover">
-        <FAQ question="What is the purpose of the conference?" answer="Please reference our history page to find out"> 
-        </FAQ>
-        <FAQ question="Who made the website?" answer="Brock Lumbard of course" >
-        </FAQ>
-        <FAQ question="Who made the website?" answer="Brock Lumbard of course" >
-        </FAQ>
-        <FAQ question="Who made the website?" answer="Brock Lumbard of course" >
-        </FAQ>
-        <FAQ question="Who made the website?" answer="Brock Lumbard of course" >
-        </FAQ>
         </div>
         </div>
         </Container>

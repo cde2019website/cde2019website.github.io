@@ -15,8 +15,8 @@ class Footer extends React.Component{
                 <img alt="" className="FooterLogo" src={Logo}/>
                 <SocialMedia className="SocMed"/>
                 </div>
-                <h6>Conference on Diveristy in Engineering, 2019.</h6>
-                <h6><a href="mailto:cde2019chairs@gmail.com">cde2019chairs@gmail.com</a></h6>
+                <h6>Conference on Diversity in Engineering, 2019.</h6>
+                <h6><a href="mailto:cochairs@cde.cfes.ca">cochairs@cde.cfes.ca</a></h6>
                 </Col>
             </Row>
         );

@@ -8,21 +8,22 @@ a:hover{
 
 .Cell1{
     background-image: url(../../img/UC.jpg);
+  height: 100vh;
   }
   .Cell2{
     background-image: url(../../img/CDE1.jpg);
   }
   .Cell3{
-    background-image: url(../../img/CDE1.jpg);
+    background-image: url(../../img/CDE.jpg);
   }
   .Cell4{
-    background-image: url(../../img/UC.jpg);
+    background-image: url(../../img/CDE3.jpg);
   }
   .Cell5{
-    background-image: url(../../img/CDE1.jpg);
+    background-image: url(../../img/CDE4.jpg);
   }
   .Cell6{
-    background-image: url(../../img/CDE1.jpg);
+    background-image: url(../../img/CDE6.jpg);
   }
   
   .CellContainer{
@@ -30,6 +31,7 @@ a:hover{
     position: relative;
     top: 50%;
     transform: translateY(-50%); 
+    max-width: 100vw;
   }
   
   .Cell1Cover{
@@ -58,9 +60,10 @@ a:hover{
     /**font-size: 2.7em !important; **/
     /**I really like the style of the above but It is obviously a choppy anmation  as I think any font-size change would be**/ 
   }
-  h1{
+  .CellContainer h1{
     font-size: inherit !important;
     margin-bottom: 0px !important;
+    word-wrap: break-word;
   }
   h2{
     font-size: 0.7em !important;
@@ -105,6 +108,9 @@ hr{
   .CountdownBanner{
     font-size: 1em;
   }
+  .titleRow > .col{
+    height: 100vh;
+  }
   .smaller{
     font-size: 0.5em;
   }
@@ -115,11 +121,15 @@ hr{
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+  .row{
+    max-width: 100vw !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
   .col{
     padding-left:0px !important;
     padding-right:0px !important;
     height:50vh;
-    max-height: 50vh;
     overflow: hidden;/*DONT DELETE THIS*/
   }
   .SocMedDummy{

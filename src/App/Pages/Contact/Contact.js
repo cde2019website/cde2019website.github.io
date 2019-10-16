@@ -11,8 +11,9 @@ import Matt from '../../img/Matt.jpeg';
 import Mathumitha from '../../img/mathumitha.JPG.jpeg';
 import Jayna from '../../img/Jayna.jpg';
 import Yudi from '../../img/Yudi.jpg';
-import Andre from '../../img/Andre.png'
-import Usman from '../../img/Usman.jpg'
+import Andre from '../../img/Andre.png';
+import Usman from '../../img/Usman.jpg';
+import Danial from '../../img/Danial.jpg';
 
 
 class Contact extends React.Component{
@@ -27,11 +28,11 @@ class Contact extends React.Component{
                 ></PageHeader>
 
                 <Row className="contactRow">
-                    <Col className="spacerCol"></Col>
-                    <TeamMember img={Matt} name="Matt Tutty" position = "Co-Chair" email = "cochairs@cde.cfes.ca"></TeamMember>
-                    <Col className="spacerCol"></Col>
+                    
+                    <TeamMember img={Matt} name="Matthew Tutty" position = "Co-Chair" email = "cochairs@cde.cfes.ca"></TeamMember>
                     <TeamMember img={Raya} name="Raya Kassam" position = "Co-Chair" email = "cochairs@cde.cfes.ca"></TeamMember>
-                    <Col className="spacerCol"></Col>
+                    <TeamMember img={Danial} name="Danial Khan"position= "Hospitality" email="danial.khan6312@gmail.com"></TeamMember>
+                    
                 </Row>
                 <Row className="contactRow">
                     <TeamMember img={Yudi} name="Yudi Yang" position = "Sponsorship" email = "sponsorship@cde.cfes.ca"></TeamMember>
